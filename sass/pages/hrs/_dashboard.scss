@@ -1,0 +1,17 @@
+.complaint {
+  &--id {
+    width: 10rem;
+  }
+
+  &--country {
+    width: 15rem;
+  }
+
+  &--city {
+    width: 10rem;
+  }
+
+  &--details {
+    width: 70rem;
+  }
+}

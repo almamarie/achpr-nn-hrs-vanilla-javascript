@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================================== FONTS ============================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ============================================ FONTS END ================================================ -->
+
+    <!-- ============================================== STYLE ============================================== -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>ACHPR HRS App</title>
+    <!-- lOGO FOR TITLE -->
+    <link
+      class="title-logo"
+      rel="icon"
+      href="/images/logos/logo_en.png"
+      type="image/icon"
+    />
+  </head>
+  <body>
+    <div class="default-wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="/images/logos/logo_en.png"
+            alt="logo of the African Commission on Human and Peoples' Rights"
+            class="header__logo--img"
+          />
+
+          <p class="header__logo--name">
+            African Commission on Human and Peoples' Rights
+          </p>
+        </div>
+
+        <ul class="header__language">
+          <li class="header__language--item">
+            <a href="#" class="header__language--link">English</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="fr">Français</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="pt">Português</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="ar">العربية</a>
+          </li>
+        </ul>
+      </header>
+      <div class="bar--green"></div>
+      <main class="main main--normal-page">
+        <div class="background-img"></div>
+        <div class="table" id="table">
+          <div class="more-info-popup hide-from-view" id="popup">
+            <a href="#table">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="more-info-popup-btn btn"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </a>
+            <ul class="popup__details">
+              <li class="popup__details--entry">
+                <span class="popup__details--title">Region:</span>
+                <span class="popup__details--value">West Africa</span>
+              </li>
+
+              <li class="popup__details--entry">
+                <span class="popup__details--title">Country:</span>
+                <span class="popup__details--value">Ghana</span>
+              </li>
+
+              <li class="popup__details--entry">
+                <span class="popup__details--title">City:</span>
+                <span class="popup__details--value">Tamale</span>
+              </li>
+
+              <li class="popup__details--entry">
+                <span class="popup__details--title">Phone number:</span>
+                <span class="popup__details--value">+2334567890</span>
+              </li>
+
+              <li class="popup__details--entry">
+                <span class="popup__details--title">Email:</span>
+                <span class="popup__details--value">camfedgh@info.gh</span>
+              </li>
+
+              <li class="popup__details--entry popup__details--top-down">
+                <span class="popup__details--title">Objectives:</span>
+                <span class="popup__details--value"
+                  >CAMFED Ghana works to support the most marginalized girls to
+                  finish secondary school, and through our transition programs
+                  help them into post school employment or further education and
+                  training.</span
+                >
+              </li>
+
+              <li class="popup__details--entry">
+                <span class="popup__details--title">Website:</span>
+                <span class="popup__details--value">www.camfedgh.org</span>
+              </li>
+
+              <li class="popup__details--entry popup__details--top-down">
+                <span class="popup__details--title"
+                  >Next activity report submission date:</span
+                >
+                <span class="popup__details--value">02/06/2022</span>
+              </li>
+
+              <li class="popup__details--entry popup__details--top-down">
+                <span class="popup__details--title"
+                  >Next activity report submission date:</span
+                >
+                <span class="popup__details--value">08/05/2024</span>
+              </li>
+            </ul>
+          </div>
+          <h3 class="table__heading heading__secondary">Dashboard</h3>
+          <ul class="table__nav">
+            <li class="btn table__nav--button">
+              <a
+                href="/html_files/ngo-nhri-portal/legal-officer-dashboard/dashboard-all-ngo-nhri-page.html"
+                >All NGO/NHRI</a
+              >
+            </li>
+            <li class="btn table__nav--button table__nav--button__active">
+              <a href="#">All NGOs</a>
+            </li>
+            <li class="btn table__nav--button">
+              <a
+                href="/html_files/ngo-nhri-portal/legal-officer-dashboard/all-nhri.html"
+                >All NHRIs</a
+              >
+            </li>
+            <li class="btn table__nav--button">
+              <a
+                href="/html_files/ngo-nhri-portal/legal-officer-dashboard/pending-applications.html"
+                >Pending Applications</a
+              >
+            </li>
+            <li class="btn table__nav--button">
+              <a
+                href="/html_files/ngo-nhri-portal/legal-officer-dashboard/downloads.html"
+                >Downloads</a
+              >
+            </li>
+            <li class="btn table__nav--button">
+              <a href="#">Activity Reports</a>
+            </li>
+          </ul>
+
+          <ul class="table__head">
+            <li class="table__head--name">Observer Number</li>
+            <li class="table__head--name">Name</li>
+            <li class="table__head--name">NGO/NHRI</li>
+            <li class="table__head--name">Country</li>
+            <li class="table__head--name">Email</li>
+            <li class="table__head--name">Website</li>
+          </ul>
+
+          <div class="table--rows--box">
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+            <ul class="table__rows btn">
+              <li class="table__rows--row">ACHPR-00000</li>
+              <li class="table__rows--row">Camfed GH</li>
+              <li class="table__rows--row">NGO</li>
+              <li class="table__rows--row">Ghana</li>
+              <li class="table__rows--row">
+                <a href="mailto:camfedghana.info.org"
+                  >camfedghana.info.orgudbacuvcvucvwwx</a
+                >
+              </li>
+              <li class="table__rows--row">
+                <a href="camfedghana.info.org">camfedghana.org</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__nav">
+          <ul class="footer__language hide-from-view">
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link">English</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="fr">Français</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="pt">Português</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="ar">العربية</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

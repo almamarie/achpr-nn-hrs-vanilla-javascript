@@ -1,0 +1,61 @@
+.nnr {
+  &-heading-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &-form {
+    margin-left: 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__heading {
+      color: $color-primary-red;
+      width: 50rem;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    &__element {
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+
+      &--label {
+        font-size: 1.5rem;
+        color: $color-black;
+      }
+
+      &--input {
+        width: 38.2rem;
+        height: 6.2rem;
+        background-color: $color-grey;
+        border: none;
+        padding: 0.5rem 1rem;
+        outline: none;
+
+        &:focus {
+          border: 3px solid rgba($color-primary-green, 0.5);
+        }
+      }
+    }
+
+    & textarea {
+      height: 20rem;
+    }
+
+    &__nn {
+      margin-top: 1.3rem;
+
+      &--title {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__next-btn {
+      text-align: center;
+      grid-column: 2;
+      margin-left: 9rem;
+      margin-top: 5rem;
+    }
+  }
+}

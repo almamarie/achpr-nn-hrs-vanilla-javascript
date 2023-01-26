@@ -1,0 +1,122 @@
+.ngo {
+  padding: 5.4rem 0 0 6.9rem;
+  &__text-signin {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__routes-newsletter {
+    margin-top: 2.5rem;
+  }
+
+  &__routes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    &--route {
+      width: 24.1rem;
+      background-color: $color-primary-green;
+      padding-left: 1rem;
+    }
+  }
+
+  &__route {
+    list-style: none;
+  }
+
+  &__route a,
+  &__route a:link,
+  &__route a:visited {
+    color: $color-white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    display: inline-block;
+    padding: 1.2rem 0;
+  }
+
+  &__text {
+    width: 48.8rem;
+    height: 38rem;
+    padding: 3rem 2.8rem;
+    color: $color-white;
+    background-color: rgba($color-primary-green, 0.5);
+  }
+
+  &__signin {
+    & p {
+      text-transform: uppercase;
+      color: $color-grey;
+    }
+    &--box {
+      width: 67.8rem;
+      height: 34.2rem;
+      background-color: rgba($color-white, 0.72);
+      padding: 6rem 7.2rem 0 7.3rem;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+
+      & li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &--label {
+      font-size: 2.6rem;
+      color: $color-black;
+    }
+
+    &--input {
+      width: 38.2rem;
+      height: 6.2rem;
+      background-color: $color-white;
+      border: none;
+    }
+
+    &--forgot-password {
+      margin-left: 15rem;
+      width: 10rem;
+    }
+
+    &--submit {
+      display: inline-block;
+      margin-left: 45rem;
+      background-color: $color-white;
+      color: $color-black;
+      padding: 0.9rem 2.5rem;
+    }
+  }
+}
+
+#email {
+  margin-bottom: 3.1rem;
+}
+
+.legal-officer-signup {
+  font-weight: 700;
+  text-decoration: none;
+  color: $color-white;
+  position: absolute;
+  right: 12.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.back-to-main-menu {
+  float: right;
+
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  margin-right: 10rem;
+  padding: 1rem;
+
+  text-align: center;
+  color: $color-white;
+  background-color: $color-primary-green;
+}

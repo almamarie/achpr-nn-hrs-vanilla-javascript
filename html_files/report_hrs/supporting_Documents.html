@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================================== FONTS ============================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ============================================ FONTS END ================================================ -->
+
+    <!-- ============================================== STYLE ============================================== -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>ACHPR HRS App</title>
+    <!-- lOGO FOR TITLE -->
+    <link
+      class="title-logo"
+      rel="icon"
+      href="/images/logos/logo_en.png"
+      type="image/icon"
+    />
+  </head>
+  <body>
+    <div class="default-wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="/images/logos/logo_en.png"
+            alt="logo of the African Commission on Human and Peoples' Rights"
+            class="header__logo--img"
+          />
+
+          <p class="header__logo--name">
+            African Commission on Human and Peoples' Rights
+          </p>
+        </div>
+
+        <ul class="header__language">
+          <li class="header__language--item">
+            <a href="#" class="header__language--link">English</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="fr">Français</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="pt">Português</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="ar">العربية</a>
+          </li>
+        </ul>
+      </header>
+      <div class="bar--green"></div>
+
+      <main class="main">
+        <div class="background-img"></div>
+
+        <div class="supporting__content">
+          <h3 class="heading__secondary heading--form">
+            Report a human rights situation
+          </h3>
+          <p class="heading__tertiary supporting__content__heading">
+            Please add your supporting material
+          </p>
+          <form
+            action="/html_files/report_hrs/final.html"
+            class="supporting__form"
+          >
+            <div class="supporting__form--elements">
+              <p class="text--normal">File upload</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="supporting__icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                />
+              </svg>
+              <input
+                type="file"
+                id="myFile"
+                name="filename"
+                class="supporting__form--file"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="submit"
+                value="Submit"
+                class="supporting__form__submit form__submit btn btn--green"
+              />
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__nav">
+          <ul class="footer__language hide-from-view">
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link">English</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="fr">Français</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="pt">Português</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="ar">العربية</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="/js/hrs/controllers/controlSupportingMaterial.js"
+    ></script>
+  </body>
+</html>

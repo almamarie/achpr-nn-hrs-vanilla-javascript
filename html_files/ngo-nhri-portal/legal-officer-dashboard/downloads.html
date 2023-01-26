@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================================== FONTS ============================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ============================================ FONTS END ================================================ -->
+
+    <!-- ============================================== STYLE ============================================== -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>ACHPR HRS App</title>
+    <!-- lOGO FOR TITLE -->
+    <link
+      class="title-logo"
+      rel="icon"
+      href="/images/logos/logo_en.png"
+      type="image/icon"
+    />
+  </head>
+  <body>
+    <div class="default-wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="/images/logos/logo_en.png"
+            alt="logo of the African Commission on Human and Peoples' Rights"
+            class="header__logo--img"
+          />
+
+          <p class="header__logo--name">
+            African Commission on Human and Peoples' Rights
+          </p>
+        </div>
+
+        <ul class="header__language">
+          <li class="header__language--item">
+            <a href="#" class="header__language--link">English</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="fr">Français</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="pt">Português</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="ar">العربية</a>
+          </li>
+        </ul>
+      </header>
+      <div class="bar--green"></div>
+      <main class="main main--normal-page">
+        <div class="background-img"></div>
+        <div class="table">
+          <h3 class="table__heading heading__secondary">Dashboard</h3>
+          <ul class="table__nav">
+            <li class="btn table__nav--button">
+              <a href="#">All NGO/NHRI</a>
+            </li>
+            <li class="btn table__nav--button">
+              <a
+                href="/html_files/ngo-nhri-portal/legal-officer-dashboard/all-ngo.html"
+                >All NGOs</a
+              >
+            </li>
+            <li class="btn table__nav--button">
+              <a
+                href="/html_files/ngo-nhri-portal/legal-officer-dashboard/all-nhri.html"
+                >All NHRIs</a
+              >
+            </li>
+            <li class="btn table__nav--button">
+              <a
+                href="/html_files/ngo-nhri-portal/legal-officer-dashboard/pending-applications.html"
+                >Pending Applications</a
+              >
+            </li>
+            <li class="btn table__nav--button table__nav--button__active">
+              <a href="">Downloads</a>
+            </li>
+            <li class="btn table__nav--button">
+              <a href="#">Activity Reports</a>
+            </li>
+          </ul>
+
+          <ul class="table__head">
+            <li class="table__head--name">Observer Number</li>
+            <li class="table__head--name">Name</li>
+            <li class="table__head--name">Country</li>
+            <li class="table__head--name">Email</li>
+            <li class="table__head--name">Website</li>
+          </ul>
+
+          <div class="download-options">
+            <a href="#" class="download-options--option download-options--link"
+              >All NGOs and NHRIs</a
+            >
+            <a href="#" class="download-options--option download-options--link"
+              >All NGOs</a
+            >
+            <a href="#" class="download-options--option download-options--link"
+              >All NHRIs</a
+            >
+            <select
+              name="countries"
+              class="download-options--option download-options--countries"
+            >
+              <option value="" selected disabled hidden>
+                Select by Country
+              </option>
+              <option value="Gambia">Gambia</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Gabon">Gabon</option>
+              <option value="Cameroon">Cameroon</option>
+              <option value="South Africa">South Africa</option>
+            </select>
+
+            <select
+              name="regions"
+              class="download-options--option download-options--regions"
+            >
+              <option value="" selected disabled hidden>
+                Select by Region
+              </option>
+              <option value="Gambia">Central Africa</option>
+              <option value="Nigeria">East Africa</option>
+              <option value="Gabon">West Africa</option>
+              <option value="Southern Africa">South Africa</option>
+            </select>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__nav">
+          <ul class="footer__language hide-from-view">
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link">English</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="fr">Français</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="pt">Português</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="ar">العربية</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

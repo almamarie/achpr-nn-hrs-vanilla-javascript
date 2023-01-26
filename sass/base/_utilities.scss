@@ -1,0 +1,22 @@
+.vertical__bar {
+  &--green {
+    background-color: $color-primary-green;
+    height: 3.6rem;
+    width: 100%;
+  }
+}
+
+// Used to hide html elements from the view.
+// This comes in handy for example in the footer which needs to be visible only in the mobile view
+.hide-from-view {
+  // opacity: 0;
+  display: none;
+  visibility: hidden;
+}
+
+// This is used to create popups in the middle of their parents
+.popup {
+  position: absolute;
+  @include middle;
+  z-index: 1;
+}

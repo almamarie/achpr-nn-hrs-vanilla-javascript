@@ -1,0 +1,19 @@
+.download-options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+
+  &--option {
+    display: inline-block;
+    width: 15rem;
+  }
+
+  &--link {
+    transition: all 0.3s;
+    &:hover {
+      background-color: $color-primary-green;
+      color: $color-white;
+    }
+  }
+}

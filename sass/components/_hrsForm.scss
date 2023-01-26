@@ -1,0 +1,60 @@
+.hrs-form {
+  width: 78.1rem;
+  margin: 0 auto;
+  padding-top: 6.3rem;
+  @include middle;
+  //   it is not completely in the middle
+  bottom: 56%;
+
+  &--heading {
+    text-align: center;
+    color: $color-primary-red;
+  }
+
+  &__input {
+    margin: 3.6rem 0 3.4rem 6.2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--label {
+      color: $color-primary-green;
+      font-weight: 700;
+      font-size: 2.1rem;
+    }
+
+    &--input {
+      padding: 1.2rem;
+      width: 52.8rem;
+      height: 5.2rem;
+      background-color: $color-grey;
+      border: none;
+    }
+  }
+
+  &__submit {
+    margin: 0 auto;
+  }
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  &--text {
+    width: 100%;
+  }
+  &--box {
+    border-radius: $border-radius;
+    width: 72rem;
+    height: 20.8rem;
+  }
+}

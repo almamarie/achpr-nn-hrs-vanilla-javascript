@@ -1,0 +1,40 @@
+.supporting {
+  &__content {
+    width: 62.7rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-top: 5.4rem;
+    color: $color-primary-green;
+  }
+
+  &__form {
+    margin-top: 12rem;
+    &--elements {
+      margin: 0 auto;
+      border: 2px dotted $color-black;
+      width: 30rem;
+
+      padding: 3rem 1rem;
+    }
+
+    &--file {
+      margin: 3rem 0 0 4.5rem;
+    }
+  }
+
+  &__icon {
+    // text-align: center;
+    display: block;
+    // height: 2.4rem;
+    width: 12.4rem;
+    margin: 0 auto;
+  }
+
+  &__form__submit {
+    margin-top: 5rem;
+  }
+}

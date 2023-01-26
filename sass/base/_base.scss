@@ -1,0 +1,17 @@
+* {
+  // Remove the default margins and paddings
+  // Set the box-sizing to border-box (It is inherit because the body has been set to border-box).
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  // Setting the box-sizing to border-box for an easier box-model settings.
+  box-sizing: border-box;
+}
+
+html {
+  // This defines what 1rem is (in this case, 10px, thats 62.5% of 16px (the default browser fontsize))
+  font-size: 62.5%;
+}

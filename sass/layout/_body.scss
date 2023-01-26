@@ -1,0 +1,66 @@
+.background-img {
+  height: 50rem;
+  width: 49.9rem;
+  background-image: url(/images/logos/logo_en.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -1;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  &--landing-page {
+    background-image: url(/images/done2.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &--ngo-page {
+    background-image: url(/images/background_images/ngo-nhri/ngo-nhri-background.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 3.6rem 1fr 9.4rem;
+}
+
+.default-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header {
+  background-color: transparent;
+}
+
+.section-main {
+  // padding-left: 4.3rem;
+  background-image: url(/images/done3.png);
+  background-size: cover;
+}
+
+.background--logo {
+  height: 65.2rem;
+  width: 66.6rem;
+
+  opacity: 0.1;
+
+  @include middle;
+
+  z-index: -1000;
+}

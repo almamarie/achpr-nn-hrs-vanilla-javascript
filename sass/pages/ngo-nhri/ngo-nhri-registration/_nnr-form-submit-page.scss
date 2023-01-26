@@ -1,0 +1,21 @@
+.nnr-form {
+  &__submit-page {
+    margin: 10rem 0 10rem 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 3.3rem;
+  }
+
+  &__element {
+    &--submit {
+      width: 30rem;
+      padding: 1.4rem 1rem;
+      background-color: rgba($color-grey, 0.5);
+      border: 3px solid transparent;
+
+      &:hover {
+        border: 3px solid rgba($color-primary-green, 0.7);
+      }
+    }
+  }
+}

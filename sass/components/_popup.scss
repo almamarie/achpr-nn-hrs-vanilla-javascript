@@ -1,0 +1,42 @@
+.popup {
+  background-color: rgba($color-primary-orange, 0.2);
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__details {
+    list-style: none;
+
+    &--nn--box {
+      margin-left: 8.8rem;
+      margin-top: 4rem;
+      width: 46rem;
+      height: 62rem;
+      padding: 2rem 4rem;
+
+      background-color: rgba($color-primary-green-shade-1, 0.7);
+    }
+
+    &--entry {
+      font-size: 1.8rem;
+
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &--title {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    &--top-down {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

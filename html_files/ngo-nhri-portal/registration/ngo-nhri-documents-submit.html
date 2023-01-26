@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================================== FONTS ============================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ============================================ FONTS END ================================================ -->
+
+    <!-- ============================================== STYLE ============================================== -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>ACHPR HRS App</title>
+    <!-- lOGO FOR TITLE -->
+    <link
+      class="title-logo"
+      rel="icon"
+      href="/images/logos/logo_en.png"
+      type="image/icon"
+    />
+
+    <script defer src="/js/lib/FileSaver.js-master/src/FileSaver.js"></script>
+    <script
+      defer
+      type="module"
+      src="/js/ngo-nhri/registration/files-controller.js"
+    ></script>
+  </head>
+  <body>
+    <div class="default-wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="/images/logos/logo_en.png"
+            alt="logo of the African Commission on Human and Peoples' Rights"
+            class="header__logo--img"
+          />
+
+          <p class="header__logo--name">
+            African Commission on Human and Peoples' Rights
+          </p>
+        </div>
+
+        <ul class="header__language">
+          <li class="header__language--item">
+            <a href="#" class="header__language--link">English</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="fr">Français</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="pt">Português</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="ar">العربية</a>
+          </li>
+        </ul>
+      </header>
+      <div class="bar--green"></div>
+      <main class="main main--normal-page">
+        <div class="background-img"></div>
+
+        <div class="nnr-heading-wrapper">
+          <h3 class="heading__secondary nnr-form__heading">
+            NGO/NHRI Registration form
+          </h3>
+        </div>
+
+        <div class="nnr-heading-wrapper">
+          <h5 class="heading__tertiary nnr-form__heading-sub">
+            upload files below
+          </h5>
+        </div>
+
+        <form
+          action=""
+          class="nnr-form__submit-page"
+          enctype="multipart/form-data"
+          id="nnr-form-files"
+        >
+          <div class="nnr-form__element nnr-form__element--submit">
+            <label for="application_letter" class="nnr-form__element--label"
+              >Application Letter</label
+            >
+            <input
+              type="file"
+              accept=".pdf"
+              id="application_letter"
+              name="application_letter"
+              class="nnr-form__element--input-file"
+              required
+            />
+          </div>
+          <div class="nnr-form__element nnr-form__element--submit">
+            <label for="list_of_members" class="nnr-form__element--label"
+              >List of Members</label
+            >
+            <input
+              type="file"
+              accept=".pdf"
+              id="list_of_members"
+              name="list_of_members"
+              class="nnr-form__element--input-file"
+              required
+            />
+          </div>
+          <div class="nnr-form__element nnr-form__element--submit">
+            <label for="consultative_statute" class="nnr-form__element--label"
+              >Consultative Statute</label
+            >
+            <input
+              type="file"
+              accept=".pdf"
+              id="consultative_statute"
+              name="consultative_statute"
+              class="nnr-form__element--input-file"
+              required
+            />
+          </div>
+          <div class="nnr-form__element nnr-form__element--submit">
+            <label
+              for="certificate_of_legal_status"
+              class="nnr-form__element--label"
+              >Certificate of Legal Status</label
+            >
+            <input
+              type="file"
+              accept=".pdf"
+              id="certificate_of_legal_status"
+              name="certificate_of_legal_status"
+              class="nnr-form__element--input-file"
+              required
+            />
+          </div>
+          <div class="nnr-form__element nnr-form__element--submit">
+            <label for="sources_of_funding" class="nnr-form__element--label"
+              >Sources of Funding</label
+            >
+            <input
+              type="file"
+              accept=".pdf"
+              id="sources_of_funding"
+              name="sources_of_funding"
+              class="nnr-form__element--input-file"
+              required
+            />
+          </div>
+          <div class="nnr-form__element nnr-form__element--submit">
+            <label for="financial_statement" class="nnr-form__element--label"
+              >Last Audited Financial Statement</label
+            >
+            <input
+              type="file"
+              accept=".pdf"
+              id="financial_statement"
+              name="financial_statement"
+              class="nnr-form__element--input-file"
+              required
+            />
+          </div>
+          <div class="nnr-form__element nnr-form__element--submit">
+            <label for="annual_activity_report" class="nnr-form__element--label"
+              >Updated Annual Activity Report</label
+            >
+            <input
+              type="file"
+              accept=".pdf"
+              id="annual_activity_report"
+              name="annual_activity_report"
+              class="nnr-form__element--input-file"
+              required
+            />
+          </div>
+          <div class="nnr-form__element nnr-form__element--submit">
+            <label for="strategic_plan" class="nnr-form__element--label"
+              >Strategic Plan</label
+            >
+            <input
+              type="file"
+              accept=".pdf"
+              id="strategic_plan"
+              name="strategic_plan"
+              class="nnr-form__element--input-file"
+              required
+            />
+          </div>
+
+          <input
+            type="submit"
+            value="Submit"
+            class="hrs-form__submit btn btn--green nnr-form__next-btn form-submit-btn"
+          />
+          <!-- <div class="loader"></div> -->
+        </form>
+      </main>
+      <footer class="footer">
+        <div class="footer__nav">
+          <ul class="footer__language hide-from-view">
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link">English</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="fr">Français</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="pt">Português</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="ar">العربية</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

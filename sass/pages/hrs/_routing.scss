@@ -1,0 +1,28 @@
+.routing__main {
+  // margin-top: 17rem;
+
+  &--choices {
+    @include middle;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.2rem;
+
+    &__choice {
+      &:link,
+      &:visited {
+        // center the text
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // =======================
+        height: 14.4rem;
+        width: 98.1rem;
+        background-color: $color-grey;
+        color: $color-primary-red;
+        font-size: 4rem;
+      }
+    }
+  }
+}

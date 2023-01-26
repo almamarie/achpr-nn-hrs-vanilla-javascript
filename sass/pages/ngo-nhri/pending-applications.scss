@@ -1,0 +1,120 @@
+.pa {
+  &__table--head {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    background-image: url(/images/background_images/table-head-backgroung-img.png);
+
+    padding-left: 2.2rem;
+
+    height: 6.8rem;
+    margin-top: 0.5rem;
+
+    color: $color-white;
+  }
+
+  &__table__rows {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+    padding: 0 2.2rem;
+
+    // if this is changed, must change the height of the below anchor element to be same to make the popup work
+    height: $pa-row-height;
+    background-color: $table-background-color;
+
+    margin-bottom: 0.5rem;
+
+    &:nth-child(even) {
+      background-color: rgba($color: $table-background-color, $alpha: 0.5);
+    }
+    &--row {
+      width: 22.32rem;
+
+      //   trancate text
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &__id {
+    width: 7rem;
+  }
+
+  &__name {
+    width: 18rem;
+  }
+
+  &__ngo-nhri {
+    width: 7rem;
+    margin-right: 2rem;
+  }
+  &__country {
+    width: 12rem;
+  }
+
+  &__email {
+    width: 15rem;
+    margin-right: 2rem;
+  }
+
+  &__website {
+    width: 15rem;
+    margin-right: 3rem;
+  }
+
+  &__actions {
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    &-btn {
+      &--download {
+        padding: 0.3rem 2rem;
+        border-radius: 3rem;
+        color: $color-white;
+
+        background-color: rgba($color-primary-green, 0.5);
+      }
+      &--green {
+        padding: 0.3rem 2rem;
+        border-radius: 3rem;
+        color: $color-white;
+
+        background-color: $color-primary-green;
+      }
+
+      &--red {
+        padding: 0.3rem 2rem;
+        border-radius: 3rem;
+        color: $color-white;
+        background-color: $color-primary-red;
+      }
+    }
+
+    &--text {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.review-btn {
+  font-size: 1.6rem;
+  border: 2px solid rgba($color-primary-green, 0.5);
+  padding: 1rem 0;
+
+  background-color: rgba($color-primary-green, 0.5);
+
+  &:hover {
+    background-color: rgba($color-primary-green, 0.7);
+  }
+
+  &:active {
+    background-color: rgba($color-primary-green, 0.8);
+  }
+}

@@ -1,0 +1,41 @@
+@import "abstract/variables";
+@import "abstract/functions";
+@import "abstract/mixins";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/hrsForm";
+@import "components/bars";
+@import "components/table";
+@import "components/popup";
+@import "components/loader";
+
+@import "layout/header";
+@import "layout/body";
+@import "layout/footer";
+
+// Index.html
+@import "pages/index";
+
+// Human rights Situation Pages
+@import "pages/hrs/routing";
+@import "pages/hrs/hrsSubmited";
+@import "pages/hrs/supporting_documents";
+@import "pages/hrs/final";
+@import "pages/hrs/dashboard";
+
+// NHO/NHRI Registration pages
+@import "pages/ngo-nhri/ngo-nhri-registration/nn-registration-page";
+@import "pages/ngo-nhri/ngo-nhri-registration/nnr-form-submit-page";
+@import "pages/ngo-nhri/ngo-nhri-registration/nnr-success";
+
+// NGO/NHRI Dashboard
+@import "pages/ngo-nhri/nn-dashboard";
+@import "pages/ngo-nhri/pending-applications.scss";
+
+// Legal Officer dashboard
+@import "pages/ngo-nhri/downloads";
+@import "pages/ngo-nhri/ngo-nhri-landing-page";

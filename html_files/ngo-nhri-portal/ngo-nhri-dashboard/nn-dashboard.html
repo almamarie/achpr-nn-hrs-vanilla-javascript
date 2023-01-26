@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================================== FONTS ============================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ============================================ FONTS END ================================================ -->
+
+    <!-- ============================================== STYLE ============================================== -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>ACHPR HRS App</title>
+    <!-- lOGO FOR TITLE -->
+    <link
+      class="title-logo"
+      rel="icon"
+      href="/images/logos/logo_en.png"
+      type="image/icon"
+    />
+    <script
+      type="module"
+      defer
+      src="/js/ngo-nhri/legal-officer-dashboard/control-nn-dashboard.js"
+    ></script>
+  </head>
+  <body>
+    <div class="default-wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="/images/logos/logo_en.png"
+            alt="logo of the African Commission on Human and Peoples' Rights"
+            class="header__logo--img"
+          />
+
+          <p class="header__logo--name">
+            African Commission on Human and Peoples' Rights
+          </p>
+        </div>
+
+        <ul class="header__language">
+          <li class="header__language--item">
+            <a href="#" class="header__language--link">English</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="fr">Français</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="pt">Português</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="ar">العربية</a>
+          </li>
+        </ul>
+      </header>
+      <div class="bar--green">
+        <a
+          href="/html_files/ngo-nhri-portal/ngo-nhri-portal-home.html"
+          class="legal-officer-signup"
+          >Sign out</a
+        >
+      </div>
+      <main class="main main--normal-page main--nn-dashboard">
+        <!-- ============================= Pop up ================================ -->
+        <div class="popup hide-from-view">
+          <!-- sr stands for session registration -->
+          <!-- <div class="pop-update-handler">
+            <div class="sr">
+              <button class="close-modal">&times;</button>
+              <h3 class="sr__upload--heading heading__tertiary">
+                Session Registration
+              </h3>
+              <form action="" class="sr__upload--form">
+                <div class="sr__upload--form-details">
+                  <label for="activity-report-file">Upload file below</label>
+                  <input type="file" id="activity-report-file" />
+                </div>
+                <input
+                  type="submit"
+                  value="SUBMIT"
+                  class="btn sr__upload--submit"
+                />
+              </form>
+            </div>
+          </div> -->
+
+          <!-- ==================================================================== -->
+          <!-- Upload activity report -->
+          <!-- ar stands for activity report -->
+          <!-- <div class="update-ar">
+            <button class="close-modal">&times;</button>
+            <h3 class="update-ar__upload--heading heading__tertiary">
+              Upload Activity report
+            </h3>
+            <form action="" class="update-ar__upload--form">
+              <div class="update-ar__upload--form-details">
+                <label for="activity-report-file">Upload file below</label>
+                <input type="file" id="activity-report-file" />
+              </div>
+              <input
+                type="submit"
+                value="SUBMIT"
+                class="btn update-ar__upload--submit"
+              />
+            </form>
+          </div> -->
+
+          <!-- ==================================================================== -->
+          <!-- <div class="nn-dashboard--update"> -->
+          <!-- <button class="close-modal">&times;</button> -->
+          <!-- This form is for updating details -->
+          <!-- <form class="ngo__signin nn-dashboard--update--form">
+              <h2 class="heading__secondary">Edit profile</h2>
+              <ul class="nn-dashboard--update--ul">
+                <li>
+                  <label for="email" class="nn-dashboard--update--label"
+                    >Email:</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="nn-dashboard--update--input"
+                  />
+                </li>
+
+                <li>
+                  <label for="address" class="nn-dashboard--update--label"
+                    >Address:</label
+                  >
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    class="nn-dashboard--update--input"
+                  />
+                </li>
+
+                <li>
+                  <label for="website" class="nn-dashboard--update--label"
+                    >Website:</label
+                  >
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    class="nn-dashboard--update--input"
+                  />
+                </li>
+
+                <li>
+                  <label for="phone-number" class="nn-dashboard--update--label"
+                    >Phone Number:</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone-number"
+                    name="phone-number"
+                    class="nn-dashboard--update--input"
+                  />
+                </li>
+              </ul>
+              <input
+                type="submit"
+                class="nn-dashboard--update--submit btn"
+                value="Save"
+              />
+            </form> -->
+          <!-- </div> -->
+        </div>
+        <!-- =========================================================================== -->
+        <div class="background-img"></div>
+        <h3 class="table__heading heading__secondary">Dashboard</h3>
+        <div class="nn-dashboard__box">
+          <div class="popup__details--nn--box">
+            <ul class="popup__details">
+              <!-- <li class="popup__details--entry">
+                <span class="popup__details--title">Region:</span>
+                <span class="popup__details--value">West Africa</span>
+              </li>
+
+              <li class="popup__details--entry">
+                <span class="popup__details--title">Country:</span>
+                <span class="popup__details--value">Ghana</span>
+              </li>
+
+              <li class="popup__details--entry">
+                <span class="popup__details--title">City:</span>
+                <span class="popup__details--value">Tamale</span>
+              </li>
+
+              <li class="popup__details--entry">
+                <span class="popup__details--title">Phone number:</span>
+                <span class="popup__details--value">+2334567890</span>
+              </li>
+
+              <li class="popup__details--entry">
+                <span class="popup__details--title">Email:</span>
+                <span class="popup__details--value">camfedgh@info.gh</span>
+              </li>
+
+              <li class="popup__details--entry popup__details--top-down">
+                <span class="popup__details--title">Objectives:</span>
+                <span class="popup__details--value"
+                  >CAMFED Ghana works to support the most marginalized girls to
+                  finish secondary school, and through our transition programs
+                  help them into post school employment or further education and
+                  training.</span
+                >
+              </li>
+
+              <li class="popup__details--entry">
+                <span class="popup__details--title">Website:</span>
+                <span class="popup__details--value">www.camfedgh.org</span>
+              </li>
+
+              <li class="popup__details--entry popup__details--top-down">
+                <span class="popup__details--title"
+                  >Past activity report submission date:</span
+                >
+                <span class="popup__details--value">02/06/2022</span>
+              </li>
+
+              <li class="popup__details--entry popup__details--top-down">
+                <span class="popup__details--title"
+                  >Next activity report submission date:</span
+                >
+                <span class="popup__details--value">08/05/2024</span>
+              </li> -->
+            </ul>
+          </div>
+          <div class="nn-dashboard__actions">
+            <a href="#" class="btn nn-dashboard__action upload-activity-report"
+              >Upload Activity Report</a
+            >
+            <a href="#" class="btn nn-dashboard__action edit-profile"
+              >Edit Profile</a
+            >
+            <a href="#" class="btn nn-dashboard__action session-registration"
+              >Register to speak during a session</a
+            >
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__nav">
+          <ul class="footer__language hide-from-view">
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link">English</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="fr">Français</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="pt">Português</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="ar">العربية</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

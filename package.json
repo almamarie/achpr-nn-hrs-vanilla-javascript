@@ -1,0 +1,21 @@
+{
+  "name": "achpr-human-rights-violation-app",
+  "version": "1.0.0",
+  "description": "a application to report human rights situation in Africa to the African Commission on Human and Peoples' Rights",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Louis Marie Atoluko Ayariga",
+  "license": "ISC",
+  "devDependencies": {
+    "jquery": "^3.6.1",
+    "node-sass": "^7.0.1",
+    "scss-tokenizer": ">=0.4.3"
+  },
+  "dependencies": {
+    "client-zip": "^2.2.2",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1"
+  }
+}

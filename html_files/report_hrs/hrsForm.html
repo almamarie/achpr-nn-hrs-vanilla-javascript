@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================================== FONTS ============================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ============================================ FONTS END ================================================ -->
+
+    <!-- ============================================== STYLE ============================================== -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>ACHPR HRS App</title>
+    <!-- lOGO FOR TITLE -->
+    <link
+      class="title-logo"
+      rel="icon"
+      href="/images/logos/logo_en.png"
+      type="image/icon"
+    />
+    <!-- SCRIPTS  -->
+  </head>
+  <body>
+    <div class="default-wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="/images/logos/logo_en.png"
+            alt="logo of the African Commission on Human and Peoples' Rights"
+            class="header__logo--img"
+          />
+
+          <p class="header__logo--name">
+            African Commission on Human and Peoples' Rights
+          </p>
+        </div>
+
+        <ul class="header__language">
+          <li class="header__language--item">
+            <a href="#" class="header__language--link">English</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="fr">Français</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="pt">Português</a>
+          </li>
+
+          <li class="header__language--divider">&nbsp</li>
+
+          <li class="header__language--item">
+            <a href="#" class="header__language--link" lang="ar">العربية</a>
+          </li>
+        </ul>
+      </header>
+      <div class="bar--green"></div>
+
+      <main class="main main--normal-page">
+        <div class="background-img"></div>
+
+        <form class="hrs-form">
+          <h3 class="heading__secondary hrs-form--heading">
+            Report a human rights situation
+          </h3>
+          <ul class="hrs-form__input">
+            <li>
+              <label for="country" class="hrs-form__input--label"
+                ><span class="hrs-form__input--label-text"
+                  >Country:</span
+                ></label
+              >
+              <input
+                type="text"
+                id="country"
+                class="hrs-form__input--input hrs-country"
+                name="country"
+                required
+              />
+            </li>
+
+            <li>
+              <label for="region" class="hrs-form__input--label"
+                ><span class="hrs-form__input--label-text"
+                  >Region/Town:</span
+                ></label
+              >
+              <input
+                type="text"
+                id="region"
+                class="hrs-form__input--input hrs-region"
+                name="region"
+                required
+              />
+            </li>
+
+            <li class="textarea">
+              <label for="report" class="hrs-form__input--label textarea--text"
+                ><span class="hrs-form__input--label-text">Report:</span></label
+              >
+
+              <textarea
+                name="report"
+                id="report"
+                class="hrs-form__input--input textarea--box hrs-complain"
+                required
+              >
+&nbsp;</textarea
+              >
+            </li>
+
+            <input
+              type="submit"
+              value="Submit"
+              class="hrs-form__submit btn btn--green hrs-submit-btn"
+            />
+          </ul>
+        </form>
+      </main>
+      <footer class="footer">
+        <div class="footer__nav">
+          <ul class="footer__language hide-from-view">
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link">English</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="fr">Français</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="pt">Português</a>
+            </li>
+
+            <li class="footer__language--item">
+              <a href="#" class="footer__language--link" lang="ar">العربية</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/js/hrs/controllers/new-report.js"></script>
+  </body>
+</html>

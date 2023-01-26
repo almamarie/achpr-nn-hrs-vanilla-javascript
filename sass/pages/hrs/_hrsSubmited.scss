@@ -1,0 +1,31 @@
+.submitted__content {
+  width: 62.7rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+
+  &--route {
+    margin-top: 12.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3.4rem;
+  }
+
+  &__heading {
+    margin-top: 5.4rem;
+  }
+
+  &__text {
+    width: 40.4rem;
+    margin: 0 auto;
+    margin-top: 1.7rem;
+  }
+
+  &__links {
+    margin-top: 11.8rem;
+
+    &--link {
+      font-size: 1.6rem;
+    }
+  }
+}
